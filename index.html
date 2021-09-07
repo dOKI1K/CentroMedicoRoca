@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página institucional del Centro Médico Roca" />
+    <link rel="icon" href="img/imgcm/logo-roca.png" />
+    <script src="https://kit.fontawesome.com/ff1de4e06d.js" crossorigin="anonymous"></script>
+    <title>Centro Médico Roca</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <nav class="nav-main">
+                <a href="index.html"><img id="logoroca" src="img/imgcm/logo.png" alt="LOGO ROCA" /></a>
+                <ul class="nav-menu">
+                    <li>
+                        <a id="inicio-site" onclick="mostrarInicio();" class="btn">Inicio</a>
+                    </li>
+                    <li class="turnos-celular">
+                        <a href="turnos.html" class="btn2">Turnos</a>
+                    </li>
+                    <li>
+                        <a id="servicios-site" onclick="mostrarServicios();" class="btn">Servicios</a>
+                    </li>
+                    <li>
+                        <a id="novedades-site" onclick="mostrarNovedades();"
+                            class="btn">Novedades</a>
+                    </li>
+                    <li>
+                        <a id="contacto-site" onclick="mostrarContacto();"
+                            class="btn">Contacto</a>
+                    </li>
+                    <li class="turnos-pc">
+                        <a href="turnos.html" class="btn2">Turnos</a>
+                    </li>
+                </ul>
+                <span class="responsive-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </nav>
+        </div>
+        <div>
+            <div class="main2">
+                <a href="https://www.google.com/maps/place/San+Martin+de+los+Andes,+Neuqu%C3%A9n/data=!4m2!3m1!1s0x96110e743605d0c7:0x71c43ffb1c66bc3a?sa=X&ved=2ahUKEwjezM_KvLbyAhUNrJUCHUkoAAoQ8gEwL3oECHkQAQ"
+                    target="blank"><img src="img/ICONS/placeholderb.png" width="16px" alt="Ubicación" /></a>
+                <p id="loc">San Martín de los Andes</p>
+                <a id="fb" href="https://www.facebook.com/centromedicoroca/" target="_blank"><img
+                        src="img/ICONS/facebookb.png" width="16px" alt="Facebook" /></a>
+                <a id="ig" href="https://www.instagram.com/centromedicoroca/" target="_blank"><img
+                        src="img/ICONS/instagramb.png" width="16px" alt="Instagram" /></a>
+            </div>
+        </div>
+    </header>
+    <section id="index-section">
+        <div class="hide-turnosfcel">
+            <a href="turnos.html" class="btn5">Turnos</a>
+        </div>
+        <div class="section-main">
+            <div class="section-main__cnt">
+                <img src="img/imgcm/cmhora.jpg" id="horario" />
+                <div class="section-text">
+                    <div>
+                        <h2>Turnos por WhatsApp y Receta médica electrónica</h2>
+                    </div>
+
+                    <div class="wpptxt">
+                        <h2>
+                            <img src="img/ICONS/whatsappn.png" height="22px" /> Whatsapp
+                            +549 294-4554355
+                        </h2>
+                    </div>
+                    <br />
+                    <div>
+                        <h3>
+                            Para solicitarla, debe comunicarse vía WhatsApp enviando
+                            <br />la siguiente información:
+                        </h3>
+                    </div>
+                    <br />
+                    <div>
+                        <ul>
+                            <li>Nombre y Apellido completo</li>
+                            <li>Número de DNI</li>
+                            <li>Prescripción médica</li>
+                            <li>Profesional solicitante</li>
+                            <li>Foto de la credencial de la obra social o prepaga</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios-section">
+        <div class="servicios">
+            <h2>Servicios Web</h2>
+
+            <div class="nav-serv">
+                <a href="turnos.html">
+                    <div class="btn4">Turnos</div>
+                </a>
+                <a href="http://181.114.143.254:4400/app">
+                    <div class="btn4">Servicio de Telediagnóstico</div>
+                </a>
+                <a href="http://181.114.143.254:4444/validarpro.html">
+                    <div class="btn4">Acceso de profesionales</div>
+                </a>
+                <a href="http://181.114.143.254:4444/hcart/app.php">
+                    <div class="btn4">Acceso ART</div>
+                </a>
+                </div>
+
+            <h2>...</h2>
+        </div>
+    </section>
+
+    <section id="novedades-section">
+        <div class="nv">
+            <div>
+                <h2>...</h2>
+                <h2>Nuevo resonador magnético Siemens 1.5T Sempra</h2>
+                <p>
+                    Recientemente hemos adquirido un nuevo resonador magnético Siemens
+                    1.5T Sempra 2021. Este equipo de última generación, permitirá una
+                    mayor calidad de imágenes y nuevas modalidades diagnosticas a
+                    disposición de nuestros pacientes.
+                </p>
+                <img src="img/imgcm/r1.jpg" /><img src="img/imgcm/r2.jpg" /><img src="img/imgcm/r3.jpg" /><img
+                    src="img/imgcm/r4.jpg" />
+                <h2>...</h2>
+            </div>
+            <div>
+                <h2>Diagnóstico por imágenes</h2>
+                <p>
+                    Desde hace mas de 20 años somos pioneros en innovación tecnológica,
+                    con equipamiento de vanguardia, puesto al servicio de la región.
+                    Ahora ya no es necesario pasar a retirar su estudio; se lo enviamos
+                    por e-mail como un acceso desde el cual puede simplemente
+                    descargarlo en su computadora personal o reenviarlo a su médico y en
+                    el momento que lo requiera retirarlo en formato físico. Sin embargo
+                    lo que más valoramos y nos esforzamos en conservar a través del
+                    tiempo, es la calidez y profesionalismo del equipo humano del que
+                    nos sentimos orgullosos de formar parte.
+                </p>
+                <img src="img/imgcm/i1.jpg" /><img src="img/imgcm/i2.jpg" /><img src="img/imgcm/i3.jpg" /><img
+                    src="img/imgcm/i4.jpg" />
+                <h2>...</h2>
+            </div>
+            <div>
+                <h2>Área Quirúrgica</h2>
+                <p>
+                    Nuestra área quirúrgica esta localizada en la calle Misionero
+                    Mascardi 955, en un ambiente distendido e intimo. El paciente que
+                    debe someterse a una intervención quirúrgica recibe en esta área
+                    todo el asesoramiento profesional y administrativo que requiera.
+                    Cuenta con un quirófano donde se realizan cirugías programadas, una
+                    sala de procedimientos videoendoscópicos con tecnología HD, un
+                    sector dedicado a quimioterapia e internación breve y un área de
+                    internación y recuperación de 8 camas. En el área de internación de
+                    mas de 24 hs., contamos con el mejor confort y seguridad para los
+                    pacientes.
+                </p>
+                <img src="img/imgcm/q1.jpg" /><img src="img/imgcm/q2.jpg" /><img src="img/imgcm/q3.jpg" /><img
+                    src="img/imgcm/q4.jpg" />
+                <h2>...</h2>
+            </div>
+            <div>
+                <h2>Consultorios y Laboratorio</h2>
+                <p>
+                    Contamos con una amplia gama de especialidades para que realice sus
+                    consultas, durante las mismas, el profesional tendrá a su
+                    disposición los estudios de diagnóstico por imágenes, informes y
+                    resultados de laboratorio realizados en el Centro Médico Roca y/o
+                    área quirúrgica.
+                </p>
+                <img src="img/imgcm/c1.jpg" /><img src="img/imgcm/c2.jpg" /><img src="img/imgcm/c3.jpg" /><img
+                    src="img/imgcm/c4.jpg" />
+                <h2 class="ultimos-puntos">...</h2>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto-section">
+
+        <div class="contacto-section">
+            <h2 class="cont-title">Consultorios</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3049.49004174048!2d-71.3452927460327!3d-40.153641775112796!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e79a8fe017d%3A0xe5934365939d15da!2sCentro%20M%C3%A9dico%20Roca!5e0!3m2!1ses!2sar!4v1630512113085!5m2!1ses!2sar"
+                style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-main__txt">
+                <ul>
+                    <li>
+                        <a class="aside-main__pos"
+                            href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Roca/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e79a8fe017d:0xe5934365939d15da!8m2!3d-40.1533137!4d-71.34421?hl=es&shorturl=1"
+                            target="_blank"><img src="img/ICONS/placeholdern.png" width="18px" alt="Ubicación" /></a>
+                    </li>
+                    <li>
+                        <a class="aside-main__pos"
+                            href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Roca/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e79a8fe017d:0xe5934365939d15da!8m2!3d-40.1533137!4d-71.34421?hl=es&shorturl=1"
+                            target="_blank">Tte. Gral Roca 1374</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img class="aside-main__tel" src="img/ICONS/phone-calln.png" width="18px" alt="Teléfono" />
+                    </li>
+                    <li>
+                        <p class="aside-main__tel">410500</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img class="aside-main__wpp" src="img/ICONS/whatsappn.png" width="18px" alt="WhatsApp" />
+                    </li>
+                    <li>
+                        <p class="aside-main__wpp">+542944554355</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="aside-main__email" href="mailto://info@centromedicoroca.com.ar"><img
+                                src="img/ICONS/mailn.png" width="18px" alt="Mail" /></a>
+                    </li>
+                    <li>
+                        <a class="mailconsu"
+                            href="mailto://info@centromedicoroca.com.ar">info@centromedicoroca.com.ar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="cont-title">...</h3>
+
+
+            <h2 class="cont-title2">Area Quirúrgica</h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3049.4362812496297!2d-71.345164!3d-40.154839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e7a3e8a6429%3A0x631b67f8a57465fa!2sMascardi%20955%2C%20Q8370%20San%20Martin%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1630512693041!5m2!1ses!2sar" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="contact-main__txt">
+                <ul>
+                    <li>
+                        <a class="aside-main2__pos" href="https://www.google.com/maps/place/Mascardi+955,+Q8370+San+Martin+de+los+Andes,+Neuqu%C3%A9n/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e7a3e8a6429:0x631b67f8a57465fa!8m2!3d-40.1561679!4d-71.3452634?hl=es" target="_blank">
+                            <img src="img/ICONS/placeholdern.png" width="18px" alt="Ubicación" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aside-main2__pos"
+                            href="https://www.google.com/maps/place/Mascardi+955,+Q8370+San+Martin+de+los+Andes,+Neuqu%C3%A9n/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e7a3e8a6429:0x631b67f8a57465fa!8m2!3d-40.1561679!4d-71.3452634?hl=es"
+                            target="_blank">M. Mascardi 955</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img class="aside-main2__tel" src="img/ICONS/phone-calln.png" width="18px" alt="Teléfono" />
+                    </li>
+                    <li>
+                        <p class="aside-main2__tel">412780</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="aside-main2__email" href="mailto://infoquirurgico@centromedicoroca.com.ar"><img
+                                src="img/ICONS/mailn.png" width="18px" alt="Mail" /></a>
+                    </li>
+                    <li>
+                        <a class="mailquiru"
+                            href="mailto://infoquirurgico@centromedicoroca.com.ar">infoquirurgico@centromedicoroca.com.ar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="cont-title">...</h3>
+        </div>
+
+
+
+
+    </section>
+
+    <script src="main.js"></script>
+
+    <aside id="aside">
+        <div class="aside-main">
+            <ul>
+                <li>
+                    <a class="aside-main__pos"
+                        href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Roca/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e79a8fe017d:0xe5934365939d15da!8m2!3d-40.1533137!4d-71.34421?hl=es&shorturl=1"
+                        target="_blank"><img src="img/ICONS/placeholdern.png" width="18px" alt="Ubicación" /></a>
+                </li>
+                <li>
+                    <a class="aside-main__pos"
+                        href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Roca/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e79a8fe017d:0xe5934365939d15da!8m2!3d-40.1533137!4d-71.34421?hl=es&shorturl=1"
+                        target="_blank">Tte. Gral Roca 1374</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="aside-main__tel" src="img/ICONS/phone-calln.png" width="18px" alt="Teléfono" />
+                </li>
+                <li>
+                    <p class="aside-main__tel">410500</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="aside-main__wpp" src="img/ICONS/whatsappn.png" width="18px" alt="WhatsApp" />
+                </li>
+                <li>
+                    <p class="aside-main__wpp">+542944554355</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="aside-main__email" href="mailto://info@centromedicoroca.com.ar"><img
+                            src="img/ICONS/mailn.png" width="18px" alt="Mail" /></a>
+                </li>
+                <li>
+                    <a class="aside-main__email"
+                        href="mailto://info@centromedicoroca.com.ar">info@centromedicoroca.com.ar</a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <div class="aside-main2">
+            <ul>
+                <li>
+                    <a class="aside-main2__pos"
+                        href="https://www.google.com/maps/place/Mascardi+955,+Q8370+San+Martin+de+los+Andes,+Neuqu%C3%A9n/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e7a3e8a6429:0x631b67f8a57465fa!8m2!3d-40.1561679!4d-71.3452634?hl=es"
+                        target="_blank"><img src="img/ICONS/placeholdern.png" width="18px" alt="Ubicación" /></a>
+                </li>
+                <li>
+                    <a class="aside-main2__pos"
+                        href="https://www.google.com/maps/place/Mascardi+955,+Q8370+San+Martin+de+los+Andes,+Neuqu%C3%A9n/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e7a3e8a6429:0x631b67f8a57465fa!8m2!3d-40.1561679!4d-71.3452634?hl=es"
+                        target="_blank">M. Mascardi 955</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="aside-main2__tel" src="img/ICONS/phone-calln.png" width="18px" alt="Teléfono" />
+                </li>
+                <li>
+                    <p class="aside-main2__tel">412780</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="aside-main2__email" href="mailto://infoquirurgico@centromedicoroca.com.ar"><img
+                            src="img/ICONS/mailn.png" width="18px" alt="Mail" /></a>
+                </li>
+                <li>
+                    <a class="aside-main2__email"
+                        href="mailto://infoquirurgico@centromedicoroca.com.ar">infoquirurgico@centromedicoroca.com.ar</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-main">
+            <div>
+                © 2021
+                <a href="https://github.com/dOKI1K?tab=repositories">Lahuen Millañanco</a>, esta página no utiliza
+                cookies ni ejecuta ningún otro proceso
+                diferente a lo que muestra. Grupo Roca S.R.L. CUIT:3070866498 Grupo
+                Roca Quirúrgico S.A. CUIT 30711593272
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    window.onload = mostrarInicio();
+</script>

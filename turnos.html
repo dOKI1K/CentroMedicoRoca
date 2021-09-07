@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página institucional del Centro Médico Roca">
+    <link rel="icon" href="img/imgcm/logo-roca.png">
+    <script src="https://kit.fontawesome.com/ff1de4e06d.js" crossorigin="anonymous"></script>
+    <title>Centro Médico Roca</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <nav class="nav-main">
+                <a href="index.html"><img id="logoroca" src="img/imgcm/logo.png" alt="LOGO ROCA" /></a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" id="inicio-site" onclick="mostrarInicio();" class="btn">Inicio</a>
+                    </li>
+                    <li class="turnos-celular">
+                        <a href="turnos.html" class="btn2">Turnos</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="servicios-site" onclick="mostrarServicios();"
+                            class="btn">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="novedades-site" onclick="mostrarNovedades();"
+                            class="btn">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="index.html" id="contacto-site" onclick="mostrarContacto();"
+                            class="btn">Contacto</a>
+                    </li>
+                    <li class="turnos-pc">
+                        <a href="turnos.html" class="btn2">Turnos</a>
+                    </li>
+                </ul>
+                <span class="responsive-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </nav>
+        </div>
+        <div>
+            <div class="main2">
+                <a href="https://www.google.com/maps/place/San+Martin+de+los+Andes,+Neuqu%C3%A9n/data=!4m2!3m1!1s0x96110e743605d0c7:0x71c43ffb1c66bc3a?sa=X&ved=2ahUKEwjezM_KvLbyAhUNrJUCHUkoAAoQ8gEwL3oECHkQAQ"
+                    target="blank"><img src="img/ICONS/placeholderb.png" width="16px" alt="Ubicación" /></a>
+                <p id="loc">San Martín de los Andes</p>
+                <a id="fb" href="https://www.facebook.com/centromedicoroca/" target="_blank"><img
+                        src="img/ICONS/facebookb.png" width="16px" alt="Facebook" /></a>
+                <a id="ig" href="https://www.instagram.com/centromedicoroca/" target="_blank"><img
+                        src="img/ICONS/instagramb.png" width="16px" alt="Instagram" /></a>
+            </div>
+        </div>
+    </header>
+
+    <script src="main.js"></script>
+
+    <section class="turnos-section" id="turnos-section">
+        <div class="turnos">
+            <div class="turno-titulos">
+                <h2>Centro Médico Roca</h2>
+                <p>Ingrese al sistema para tomar un turno</p>
+            </div>
+            <div id="login-tab" class="login-tab">
+                <table>
+                    <tr>
+                        <td>
+                            DNI:
+                        </td>
+                        <td>
+                            <input type="text" id="txtdni" class="inp-val">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Clave:
+                        </td>
+                        <td>
+                            <input type="password" id="txtclave" class="inp-val">
+                        </td>
+                    </tr>
+                </table>
+                <h6 class="llenar-campos" id="llenar-campos">❌Debes llenar todos los datos</h6>
+            </div>
+
+            <button class="btn3" id="ingresar-btn" type="submit" onclick="loginPage();">Ingresar</button><br>
+            <a class="acc1" onclick="mostrarRegistro();">¿No tenés cuenta? Regístrate</a>
+            <a class="acc2">¿Olvidó su clave? haga click aquí</a>
+        </div>
+        <script src="main.js"></script>
+    </section>
+
+
+    <section class="registro-section" id="registro-section">
+        <div class="registro">
+            <div class="registro-titulos">
+                <h2>Centro Médico Roca Autogestión</h2>
+                <p>Registrese para generar un usuario</p>
+            </div>
+            <div id="registro-tab" class="registro-tab">
+                <table>
+                    <tr>
+                        <td>
+                            Nombre:</td>
+                        <td>
+                            <input type="text" name="txtnombre" id="txtnombre" class="inp-val">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Apellido:
+                        </td>
+                        <td>
+                            <input type="text" name="txtapellido" id="txtapellido" class="inp-val">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            DNI:</td>
+                        <td>
+                            <input type="text" name="txtdni2" id="txtdni2" class="inp-val">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            e-Mail:</td>
+                        <td>
+                            <input type="email" name="txtemail" id="txtmail" class="inp-val">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Teléfono:
+                        </td>
+                        <td>
+                            <input type="number" name="txtel" id="txtel" class="inp-val">
+                        </td>
+                    </tr>
+                </table>
+
+                <h6 class="llenar-campos2" id="llenar-campos2">❌Debes llenar todos los datos</h6>
+            </div>
+
+            <button class="btn3" name="register" id="registrarse-btn" type="submit" onclick="regPage();">Registrarse</button>
+            <a class="acc3" onclick="mostrarTurnos2();">¿Ya tenés cuenta? Inicia sesión</a>
+
+            <script src="main.js"></script>
+        </div>
+        
+    </section>
+
+    <section class="tomar-turnos" id="tomar-turnos">
+
+        <div id="welcome" class="welcome">
+            <div class="turno-titulos">
+                <h2>Centro Médico Roca</h2>
+
+                <h3>Bienvenido!</h3>
+
+                <p>Para obtener turno en diagnóstico por imágenes, contactarse al 410500 int 266.
+                <br>O bien por mail a cmrdiagnostico@gmail.com, indicandonos un teléfono de <br>
+                contacto y lo llamaremos dentro de las 24hs hábiles.</p>
+            </div>
+
+                <a class="btn3" onclick="misTurnos();">Mis turnos</a>
+        </div>
+
+        <div id="tomar-turnos__esp" class="tomar-turnos__esp">
+
+            <div>
+                <h4>Turnos online</h4>
+            </div>
+
+            <div id="divmenu1" class="divmenu1">
+                <select id="selectesp" onchange="//valor">
+                    <option value="0">Elija una especialidad</option>
+                    <option value="41">CARDIOLOGIA INFANTIL</option>
+                    <option value="10">CARDIOLOGO</option>
+                    <option value="3">CIRUJANO EN MASCARDI</option>
+                    <option value="2">CLÍNICA MÉDICA</option>
+                    <option value="51">CLINICA-INFECTOLOGA </option>
+                    <option value="12">DERMATOLOGO</option>
+                    <option value="32">ENDOCRINOLOGIA</option>
+                    <option value="18">FLEBOLOGO</option>
+                    <option value="21">GASTROENTEROLOGO</option>
+                    <option value="49">GASTROENTEROLOGO PEDIATRICO </option>
+                    <option value="7">GINECÓLOGO</option>
+                    <option value="1">MÉDICO GENERALISTA</option>
+                    <option value="47">NEUMONOLOGO </option>
+                    <option value="39">NEUROLOGO</option>
+                    <option value="20">NUTRICION</option>
+                    <option value="6">OFTALMÓLOGO</option>
+                    <option value="40">ONCOLOGIA</option>
+                    <option value="9">OTORRINO</option>
+                    <option value="8">PEDIATRA</option>
+                    <option value="44">PSIQUIATRIA</option>
+                    <option value="27">REUMATOLOGO</option>
+                    <option value="5">TRAUMATÓLOGO</option>
+                    <option value="17">UROLOGO</option>
+                </select>
+            </div>
+
+            <div class="ocultar" id="ocultar-t">
+                <a onclick="ocuTom();"><img src="img/ICONS/invisibleb.png" alt="No mostrar"></a>
+                <a onclick="ocuTom();"><p>Ocultar tomados</p></a>
+            </div>
+
+            <div class="mostrar" id="mostrar-t">
+                <a onclick="verTom();"><img src="img/ICONS/visibilityb.png" alt="Mostrar"></a>
+                <a onclick="verTom();"></a><p>Ver tomados</p></a>
+            </div>
+        
+        </div>
+
+        <div class="last-a">
+            <a href="index.html" class="btn">Cerrar sesión</a>
+            <a href="http://181.114.143.254:4444/cambiarclave.html" class="btn">Cambiar clave</a>
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+
+    <aside id="aside">
+        <div class="aside-main">
+            <ul>
+                <li>
+                    <a class="aside-main__pos"
+                        href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Roca/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e79a8fe017d:0xe5934365939d15da!8m2!3d-40.1533137!4d-71.34421?hl=es&shorturl=1"
+                        target="_blank"><img src="img/ICONS/placeholdern.png" width="18px" alt="Ubicación"></a>
+                </li>
+                <li>
+                    <a class="aside-main__pos"
+                        href="https://www.google.com/maps/place/Centro+M%C3%A9dico+Roca/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e79a8fe017d:0xe5934365939d15da!8m2!3d-40.1533137!4d-71.34421?hl=es&shorturl=1"
+                        target="_blank">Tte. Gral Roca 1374</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="aside-main__tel" src="img/ICONS/phone-calln.png" width="18px" alt="Teléfono">
+                </li>
+                <li>
+                    <p class="aside-main__tel">410500</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="aside-main__wpp" src="img/ICONS/whatsappn.png" width="18px" alt="WhatsApp">
+                </li>
+                <li>
+                    <p class="aside-main__wpp">+542944554355</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="aside-main__email" href="mailto://info@centromedicoroca.com.ar"><img
+                            src="img/ICONS/mailn.png" width="18px" alt="Mail"></a>
+                </li>
+                <li>
+                    <a class="aside-main__email"
+                        href="mailto://info@centromedicoroca.com.ar">info@centromedicoroca.com.ar</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="aside-main2">
+            <ul>
+                <li>
+                    <a class="aside-main2__pos"
+                        href="https://www.google.com/maps/place/Mascardi+955,+Q8370+San+Martin+de+los+Andes,+Neuqu%C3%A9n/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e7a3e8a6429:0x631b67f8a57465fa!8m2!3d-40.1561679!4d-71.3452634?hl=es"
+                        target="_blank"><img src="img/ICONS/placeholdern.png" width="18px" alt="Ubicación"></a>
+                </li>
+                <li>
+                    <a class="aside-main2__pos"
+                        href="https://www.google.com/maps/place/Mascardi+955,+Q8370+San+Martin+de+los+Andes,+Neuqu%C3%A9n/@-40.154839,-71.345164,17z/data=!4m5!3m4!1s0x96110e7a3e8a6429:0x631b67f8a57465fa!8m2!3d-40.1561679!4d-71.3452634?hl=es"
+                        target="_blank">M. Mascardi 955</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img class="aside-main2__tel" src="img/ICONS/phone-calln.png" width="18px" alt="Teléfono">
+                </li>
+                <li>
+                    <p class="aside-main2__tel">412780</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="aside-main2__email" href="mailto://infoquirurgico@centromedicoroca.com.ar"><img
+                            src="img/ICONS/mailn.png" width="18px" alt="Mail"></a>
+                </li>
+                <li>
+                    <a class="aside-main2__email"
+                        href="mailto://infoquirurgico@centromedicoroca.com.ar">infoquirurgico@centromedicoroca.com.ar</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <footer>
+        <div class="footer-main">
+            <div>
+                © 2021 <a href="#">Pedro Pablo Giraudi</a> , esta página no utiliza cookies ni ejecuta ningún otro
+                proceso diferente a lo
+                que muestra. Grupo Roca S.R.L. CUIT:3070866498 Grupo Roca Quirúrgico S.A. CUIT 30711593272
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    window.onload = mostrarTurnos();
+</script>
